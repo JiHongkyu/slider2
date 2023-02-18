@@ -1,0 +1,69 @@
+/*초기화*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*화면에 보이는 container*/
+.container {
+    width: 100%;
+    height: 300px;
+    margin-top: 200px;
+    position: relative;
+    overflow: hidden; /*화면을 넘어가면 안보이게 설정*/
+    box-sizing: border-box;
+}
+
+/*ul태그*/
+.container .slider {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: left 0.5s ease-out; 
+}
+
+/*li태그*/
+.container .slider .slide {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-shrink: 0; /*화면에 따라 줄어들지않음*/
+    justify-content: center;
+    align-items: center;
+}
+
+.container .slider .slide:nth-child(1) {
+    background-color: #f46e6e;
+}
+.container .slider .slide:nth-child(2) {
+    background-color: #f1ab2a;
+}
+.container .slider .slide:nth-child(3) {
+    background-color: #f0f07d;
+}
+.container .slider .slide:nth-child(4) {
+    background-color: #80ff80;
+}
+.container .slider .slide:nth-child(5) {
+    background-color: #9797fd;
+}
+
+.container .left {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 3%;
+}
+
+.container .right {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+}
