@@ -7,7 +7,7 @@ let currentNode = 0;
 
 //슬라이드 실행
 function slide(num) {
-    container_width = container.clientWidth;
+    container_width = container.clientWidth; 
     slider.style.left = -(num * container_width) + 'px';
 } 
 
