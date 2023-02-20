@@ -27,5 +27,6 @@ function slideRight() {
         slide(++currentNode);
     }
 }
+
 left.addEventListener('click', slideLeft);
 right.addEventListener('click', slideRight);
